@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Basketball Score Board</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="inner-container">
+        <div id="home">
+          <h3 class="heading">HOME</h3>
+          <h4 class="team">GSW</h4>
+          <div id="score-board">
+            <h3 id="home-score">0</h3>
+          </div>
+          <button id="incrementHomeByOne">+1</button>
+          <button id="incrementHomeByTwo">+2</button>
+          <button id="incrementHomeByThree">+3</button>
+        </div>
+
+        <div id="guest">
+          <h3 class="heading">GUEST</h3>
+          <h4 class="team">MIA</h4>
+          <div id="score-board">
+            <h3 id="guest-score">0</h3>
+          </div>
+
+          <button id="incrementGuestByOne">+1</button>
+          <button id="incrementGuestByTwo">+2</button>
+          <button id="incrementGuestByThree">+3</button>
+        </div>
+      </div>
+
+      <div class="reset">
+        <button id="reset-btn">RESET</button>
+      </div>
+      <div class="scores">
+        <div class="quarters">
+          <button id="first-quarter">1st Quarter</button>
+          <p id="first-quarter-score"></p>
+        </div>
+        <div class="quarters">
+          <button id="second-quarter">2nd Quarter</button>
+          <p id="second-quarter-score"></p>
+        </div>
+        <div class="quarters">
+          <button id="third-quarter">3rd Quarter</button>
+          <p id="third-quarter-score"></p>
+        </div>
+        <div class="quarters">
+          <button id="fourth-quarter">4th Quarter</button>
+          <p id="fourth-quarter-score"></p>
+        </div>
+      </div>
+      <div class="commentary-box">
+        <p id="commentary"></p>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
